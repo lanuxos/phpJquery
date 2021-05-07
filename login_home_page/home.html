@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/bb0c499d9e.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <style>
+        @font-face {
+            font-family: noto_san_lao;
+            src: url(assets/Noto-Sans-Lao-Bold.ttf.woff);
+            font-weight: bold;
+        }
+        
+        @font-face {
+            font-family: monoton;
+            src: url(assets/Monoton.ttf.woff);
+            font-weight: bold;
+        }
+        
+        * {
+            font-family: noto_san_lao;
+        }
+    </style>
+</head>
+
+<body class="bg-secondary" id="content">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="font-weight: bold;font-size:24px">
+                <span style="font-family:monoton;font-size:30px">MP</span> Solution
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav me-auto mt-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">ໜ້າຫຼັກ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ຕິດຕໍ່</a>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div class="d-flex">
+                <a class="nav-link" href="#"> <span style="font-size: 1.5em; color: blue;"><i class="fas fa-user-tie"></i></span> ຜູ້ໃຊ້ງານ
+                </a>
+                <a class="nav-link" href="#"><span style="font-size: 1.5em;color: red;"><i class="fas fa-power-off"></i></span> ອອກ</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-8 col-sm-10 col-10 mt-5">
+                <div class="card">
+                    <div class="card-header">
+                        ສະແດງຂໍ້ມູນຜູ້ໃຊ້ງານ
+                    </div>
+                    <div class="card-body">
+                        <div class=" mb-3 right">
+                            <button class="btn btn-primary btn-sm">ເພີ່ມຜູ້ໃຊ້ງານ</button>
+                        </div>
+                        <table class="table bg-info">
+                            <thead class="table-success">
+                                <tr>
+                                    <th>Id</th>
+                                    <th>ຊື່</th>
+                                    <th>ນາມສະກຸນ</th>
+                                    <th>ທີ່ຢູ່</th>
+                                    <th>ເບີໂທ</th>
+                                    <th>ອີເມລ</th>
+                                    <th>ລະຫັດຜ່ານ</th>
+                                    <th>ຈັດການ</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>ທອງເສົາ</td>
+                                    <td>ພູມວິພັດ</td>
+                                    <td>ຂາມງອຍ</td>
+                                    <td>020 96519157</td>
+                                    <td>thongsaopvp969@gmail.com</td>
+                                    <td>12345678</td>
+                                    <td>
+                                        <button class="btn btn-primary btn-sm" name="btn_view" id="btn_view">ເບີ່ງເພີ່ມ</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>ທອງເສົາ</td>
+                                    <td>ພູມວິພັດ</td>
+                                    <td>ຂາມງອຍ</td>
+                                    <td>020 96519157</td>
+                                    <td>thongsaopvp969@gmail.com</td>
+                                    <td>12345678</td>
+                                    <td>
+                                        <button class="btn btn-primary btn-sm" name="btn_view" id="btn_view">ເບີ່ງເພີ່ມ</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>ທອງເສົາ</td>
+                                    <td>ພູມວິພັດ</td>
+                                    <td>ຂາມງອຍ</td>
+                                    <td>020 96519157</td>
+                                    <td>thongsaopvp969@gmail.com</td>
+                                    <td>12345678</td>
+                                    <td>
+                                        <button class="btn btn-primary btn-sm" name="btn_view" id="btn_view">ເບີ່ງເພີ່ມ</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
